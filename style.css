@@ -73,6 +73,16 @@ nav {
   width: 1200px;
 }
 
+#iAm .content {
+  display: flex;
+  gap: 30px;
+}
+
+.profile_1 {
+  width: 300px;
+  border-radius: 20px;
+}
+
 .introduceText {
   line-height: 250%;
 }
@@ -86,4 +96,29 @@ nav {
   padding: 2px 3px;
   border-radius: 4px;
   color: #2f75ff;
+}
+
+.likeContainer {
+  display: flex;
+  gap: 30px;
+}
+
+.likeContainer img {
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.movie {
+  width: 200px;
+  height: 200px;
+}
+
+.app {
+  height: 200px;
 }
