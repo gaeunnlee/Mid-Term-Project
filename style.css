@@ -4,6 +4,10 @@
  font-family: 'Jeju Gothic', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: #444;
@@ -15,7 +19,6 @@ body {
   flex-direction: column;
   padding: 30px;
   align-items: center;
-  gap: 60px;
 }
 
 .topProfile {
@@ -23,17 +26,30 @@ body {
   flex-direction: column;
   background: #ffffff;
   box-shadow: 4px 4px 100px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
+  border-radius: 0 0 30px 30px;
   padding: 60px;
   box-sizing: border-box;
   width: 1200px;
+  margin-bottom: 60px;
 }
 nav {
   display: flex;
+  width: 1200px;
   justify-content: flex-end;
   gap: 100px;
-  margin-bottom: 100px;
+  position: sticky;
+  top: 0px;
+  padding: 40px 30px 20px 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  z-index: 9999;
 }
+
+nav a:hover {
+  color: #2f75ff;
+  transition: 0.3s
+}
+
 .topProfile .content {
   display: flex;
   justify-content: space-between;
@@ -76,6 +92,7 @@ nav {
   padding: 60px;
   box-sizing: border-box;
   width: 1200px;
+  margin-bottom: 60px;
 }
 
 #iAm .content {
